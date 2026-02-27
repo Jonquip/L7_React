@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "description": "Выполнить ЛР7",
+      "status": "active",
+      "deadline": "2025-02-18"
+    },
+    {
+      "id": "2",
+      "description": "Сдать курсы по БД",
+      "status": "done",
+      "deadline": "2026-02-27"
+    },
+    {
+      "id": "3",
+      "description": "Найти работу",
+      "status": "done",
+      "deadline": "2026-02-27"
+    }
+  ]
+}

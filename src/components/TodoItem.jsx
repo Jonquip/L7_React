@@ -51,7 +51,6 @@ const TodoItem = ({ task, onDelete, onUpdate }) => {
     return `${day}.${month}.${year}`
   }
 
-  // Редактирование описания
   if (editingField === 'description') {
     return (
       <tr>
@@ -83,7 +82,6 @@ const TodoItem = ({ task, onDelete, onUpdate }) => {
     )
   }
 
-  // Редактирование статуса
   if (editingField === 'status') {
     return (
       <tr>
@@ -114,7 +112,6 @@ const TodoItem = ({ task, onDelete, onUpdate }) => {
     )
   }
 
-  // Редактирование дедлайна
   if (editingField === 'deadline') {
     return (
       <tr>
@@ -141,7 +138,6 @@ const TodoItem = ({ task, onDelete, onUpdate }) => {
     )
   }
 
-  // Обычный режим
   return (
     <tr>
       <td onClick={() => startEditing('description', task.description)} style={{ cursor: 'pointer' }}>

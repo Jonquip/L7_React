@@ -36,8 +36,7 @@ const AddTodoModal = ({ isOpen, onClose, onAdd }) => {
 
     onAdd({
       ...formData,
-      id: Date.now(),
-      description: formData.description
+      id: Date.now()
     })
     
     setFormData({
@@ -48,7 +47,6 @@ const AddTodoModal = ({ isOpen, onClose, onAdd }) => {
     setErrors({})
   }
 
-  // Форматируем дату для input type="date" (YYYY-MM-DD)
   const today = new Date().toISOString().split('T')[0]
 
   return (
